@@ -43,7 +43,12 @@ Welcome to the Event Manager Company! As a newly hired Software QA Analyst/Devel
  
  - All pytests successfully Run
  - CMD: docker compose exec fastapi pytest tests
- - Link 
+ - Link https://github.com/nisha2110/HW-10_event_manager_final/blob/main/pytest-run.PNG
+
+ 4. Password Validation:
+ -  Standard password Rules set  minimum length, at least one upper case, lower case, numbers, and special character.
+ - link https://github.com/nisha2110/HW-10_event_manager_final/blob/main/app/schemas/user_schemas.py
+ 
 
 
 
