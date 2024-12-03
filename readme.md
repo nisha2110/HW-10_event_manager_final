@@ -18,6 +18,7 @@ Welcome to the Event Manager Company! As a newly hired Software QA Analyst/Devel
 - Creating database migration: docker compose exec fastapi alembic revision --autogenerate -m 'added admin'
 
 ## Issues to Address:
+ 
 1. Validation Error :
  - The errors in tests indicate mismatches between the fields in test data (user_base_data, user_create_data, etc.) and the actual schema definitions (UserBase, UserCreate, UserUpdate, etc.).
  KeyError: Indicates that the expected keys (nickname, first_name, etc.) are missing from the test data.
@@ -26,4 +27,23 @@ Welcome to the Event Manager Company! As a newly hired Software QA Analyst/Devel
 - Fix Error:
 - change file https://github.com/nisha2110/HW-10_event_manager_final/blob/main/tests/test_schemas/test_user_schemas.py
 - Link https://github.com/nisha2110/HW-10_event_manager_final/blob/main/1-1-validation.PNG
+
+2. Nickname and username Validation:
+- Resolved the issue with auto-generating nicknames during user registration. The manually generated nickname is now passed as an argument to the generate_nickname method, ensuring it updates correctly in the database.
+- Addressed the duplicate nickname problem during registration. Implemented a validation check to ensure all nicknames are unique before saving them to the database.
+3. SMTP Mail service mailtrap 
+- Error:
+   - FAILED tests/test_email.py::test_send_markdown_email - smtplib.SMTPServerDisconnected: Connection unexpectedly closed FAILED tests/test_services/test_user_service.py::test_create_user_with_valid_data - smtplib.SMTPServerDisconnected: Connection unexpectedly closed FAILED tests/test_services/test_user_service.
+  
+  - test_register_user_with_valid_data - smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+
+- Fix:
+   
+- SMTP credentials and configurations are stored securely, using .env  files and  Resolved the issue with missing email validation. Implemented logic to ensure the email field checks for invalid formats, such as missing email, username, or domain name, to prevent invalid email addresses from being accepted.
+ 
+ - All pytests successfully Run
+ - CMD: docker compose exec fastapi pytest tests
+ - Link 
+
+
 
