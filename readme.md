@@ -53,6 +53,10 @@ Welcome to the Event Manager Company! As a newly hired Software QA Analyst/Devel
  5. Password Validation:
  -  Standard password Rules set  minimum length, at least one upper case, lower case, numbers, and special character and and properly hashing passwords before storing them in the database.
  - link https://github.com/nisha2110/HW-10_event_manager_final/blob/main/app/schemas/user_schemas.py
+
+ ## Testing and Coverage
+ - Comprehensive testing was performed using pytest to ensure a high degree of confidence in the application:
+ - I Achieved 93% test coverage.
  
  ## Learning this project:
  Through this project, I gained valuable insights into the product lifecycle and the process of building production-ready applications. Here are my key takeaways:
