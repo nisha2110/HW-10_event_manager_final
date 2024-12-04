@@ -46,7 +46,7 @@ Welcome to the Event Manager Company! As a newly hired Software QA Analyst/Devel
  
  - All pytests successfully Run
  - CMD: docker compose exec fastapi pytest tests
- - Link https://github.com/nisha2110/HW-10_event_manager_final/blob/main/pytest-run.PNG
+ - ![pytest-run](https://github.com/user-attachments/assets/966deb6e-11f4-49ed-9ffb-101fea816cc3)
 
  4. Missing Token Fixure:
   - Developed pytest fixtures to generate access tokens for various roles like Users, Admins, Managers.
@@ -62,8 +62,11 @@ Welcome to the Event Manager Company! As a newly hired Software QA Analyst/Devel
  - I Achieved 93% test coverage.
  - https://github.com/nisha2110/HW-10_event_manager_final/actions/runs/12152417576/job/33888787582
 
- - 
- - 
+ - ![pytest](https://github.com/user-attachments/assets/1f1b54c6-d573-43cb-9dd9-b47d3aba5c7e)
+
+ ## Pytest coverage:
+ 
+ ![testcoverage](https://github.com/user-attachments/assets/cab7844c-434c-4453-b8d0-6293d90c8a1e)
 
  ## DockerHub Image Link:
  - https://hub.docker.com/repository/docker/nishi2110/hw-10_eventmanager/general
