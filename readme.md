@@ -62,8 +62,12 @@ Welcome to the Event Manager Company! As a newly hired Software QA Analyst/Devel
  - I Achieved 93% test coverage.
  - https://github.com/nisha2110/HW-10_event_manager_final/actions/runs/12152417576/job/33888787582
 
+ - [pytest-run](https://github.com/user-attachments/assets/6b28e3f1-4ce1-431d-85c2-c0faf35af5a2)
+
+
  ## DockerHub Image Link:
  - https://hub.docker.com/repository/docker/nishi2110/hw-10_eventmanager/general
+ - [docker-hub](https://github.com/user-attachments/assets/e55b90c5-c4cf-463a-ad25-f2da5ea09723)
 
  
  ## Learning this project:
