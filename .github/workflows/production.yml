@@ -46,9 +46,18 @@ jobs:
           pip install -r requirements.txt
           
       - name: Run tests with Pytest
-        env:
-          DATABASE_URL: postgresql+asyncpg://user:password@localhost:5432/myappdb  # Configure the DATABASE_URL environment variable for tests
-        run: pytest
+      - name: Run tests with Pytest
+      env:
+        DATABASE_URL: postgresql+asyncpg://user:password@localhost:5432/myappdb
+        SMTP_HOST: smtp.gmail.com # SMTP server (example: Gmail)
+        SMTP_PORT: 587 # Typically 587 for TLS, or 465 for SSL
+        SMTP_USER: ${{ secrets.SMTP_USER }} # Secret SMTP user (email)
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }} # Secret SMTP password (app password)
+        SMTP_FROM_EMAIL: ${{ secrets.SMTP_USER }} # Sender email
+        SMTP_TO_EMAIL: "recipient@example.com" # Receiver email
+      run: |
+        pytest
+        
       - name: Run tests with Pytest cov
         env:
           DATABASE_URL: postgresql+asyncpg://user:password@localhost:5432/myappdb  # Configure the DATABASE_URL environment variable for tests
