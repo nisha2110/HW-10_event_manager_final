@@ -39,16 +39,30 @@ Welcome to the Event Manager Company! As a newly hired Software QA Analyst/Devel
 
 - Fix:
    
-- SMTP credentials and configurations are stored securely, using .env  files and  Resolved the issue with missing email validation. Implemented logic to ensure the email field checks for invalid formats, such as missing email, username, or domain name, to prevent invalid email addresses from being accepted.
+- SMTP credentials and configurations are stored securely, using .env  files add smtp mailtrap credentials and  Resolved the issue with missing email validation. Implemented logic to ensure the email field checks for invalid formats, such as missing email, username, or domain name, to prevent invalid email addresses from being accepted.
  
  - All pytests successfully Run
  - CMD: docker compose exec fastapi pytest tests
  - Link https://github.com/nisha2110/HW-10_event_manager_final/blob/main/pytest-run.PNG
 
- 4. Password Validation:
- -  Standard password Rules set  minimum length, at least one upper case, lower case, numbers, and special character.
+ 4. Missing Token Fixure:
+  - Developed pytest fixtures to generate access tokens for various roles like Users, Admins, Managers.
+    These fixtures facilitate authentication for tests, ensuring seamless execution of all tests requiring authenticated access while enhancing the efficiency and maintainability of the testing process.
+    change file: https://github.com/nisha2110/HW-10_event_manager_final/blob/main/tests/test_conftest.py
+
+ 5. Password Validation:
+ -  Standard password Rules set  minimum length, at least one upper case, lower case, numbers, and special character and and properly hashing passwords before storing them in the database.
  - link https://github.com/nisha2110/HW-10_event_manager_final/blob/main/app/schemas/user_schemas.py
+
+ ## Testing and Coverage
+ - Comprehensive testing was performed using pytest to ensure a high degree of confidence in the application:
+ - I Achieved 93% test coverage.
  
+ ## Learning this project:
+ Through this project, I gained valuable insights into the product lifecycle and the process of building production-ready applications. Here are my key takeaways:
+- Testing is Essential at Every Stage
+- This project reinforced the importance of continuous testing. Running pytest after each change allowed me to catch bugs early,       identify problematic areas in the application, and address issues promptly. Analyzing test results made debugging more straightforward and efficient, ensuring the application maintained its expected functionality throughout development.
+- Coordinating my work with the project criteria required me to go over the instructor's video and project README several times. This procedure made sure I kept on course, understood the expectations completely, and completed the job as planned.
 
 
 
