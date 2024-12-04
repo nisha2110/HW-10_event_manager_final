@@ -45,7 +45,7 @@ Welcome to the Event Manager Company! As a newly hired Software QA Analyst/Devel
 - Resolved :Set Up a Mailtrap Account Go to Mailtrap and create a new account and go to my inbox and click default myinbox and copy smtp username and password and paste  .env file. 
  
  - All pytests successfully Run
- - CMD: docker compose exec fastapi pytest tests
+ - CMDcommand Run: docker compose exec fastapi pytest tests
  - ![pytest-run](https://github.com/user-attachments/assets/966deb6e-11f4-49ed-9ffb-101fea816cc3)
 
  4. Missing Token Fixure:
